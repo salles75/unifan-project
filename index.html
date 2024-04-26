@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site de Vendas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Produtos Exclusivos</h1>
+    </header>
+    <section class="content">
+        <p>Bem-vindo ao nosso site de vendas! Aqui você encontrará uma coleção exclusiva de produtos. Caso necessite de suporte, envie-nos uma mensagem onde responderemos imediatamente.</p>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Seu Nome" required>
+            <input type="email" id="email" placeholder="Seu E-mail" required>
+            <label for="message">Escreva sua mensagem:</label>
+            <textarea id="message" placeholder="Sua Mensagem"></textarea>
+            <label for="marketingInfo">Desejo receber informações de marketing por e-mail</label>
+            <input type="checkbox" id="marketingInfo" name="marketingInfo">
+            <button type="submit" id="submitButton">Enviar</button>
+            <div id="loader"></div>
+            <div id="successMessage"></div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Meu Site de Vendas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
